@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/0e8c3445d9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <section id="header"  class="header">
+      <div class="container" >
+        <nav>
+          <!-- <img src="" alt="" class="logo" /> -->
+
+          <h1 class="logo">Stevenson</h1>
+          <ul id="side-menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <a href="#"><i class="fa-sharp fa-solid fa-xmark" id="close-bar"></i></a>
+          </ul>
+        </nav>
+        <div fa-bars>
+          <i class="fa-solid fa-bars" id="open-bar"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="hero" class="hero-header">
+      <div class="header-text">
+        <!-- <h2>Front End Developer</h2> -->
+        <h2>Hi,I'm <span>Stevenson</span> St Laurent</h2>
+      </div>
+    </section>
+
+    <!-- ------------About------------ -->
+    <div id="about">
+      <div class="container-about">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/orquestre.JPG" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About Me</h2>
+            <p>
+              Originally from Haiti, I moved to Russia in 2018 to study Civil
+              Engineering, where I also taught music and dance. In 2023, I
+              relocated to Las Vegas, where I opened a dance studio and began
+              focusing more on coding, transitioning into software development
+              as a Front-End Developer. I am a goal-oriented Web Developer
+              committed to collaboration and solutions-oriented problem-solving.
+              I utilize various web design tools to create custom, user-focused
+              websites, ensuring high standards of user experience, usability,
+              and speed. With over two years of experience, I strive to deliver
+              exceptional solutions for multiple users.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-link active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-link" onclick="opentab('experience')">Experience</p>
+              <p class="tab-link" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front End Developer</span><br />Proficiency in HTML,
+                  CSS, and JavaScript. Logical and results-driven Web Developer
+                  dedicated to building and optimizing user-focused websites for
+                  customers with various business objectives. Judicious and
+                  creative when crafting effective websites, apps and platforms
+                  to propel competitive advantage and revenue growth.
+                  Technically proficient and analytical problem solver with calm
+                  and focused demeanor.
+                </li>
+                <li><span>Band leader(saxophonist)</span><br /></li>
+                Assessed musicians and assigned instruments and parts for songs
+                and concerts. Knowledgeable Music Director with 9 years of
+                experience and exceptional leadership, planning and
+                relationship-building skills. Detail-oriented and hardworking
+                with a successful background in jazz. Looking for a new role
+                with long-term potential.
+                <li>
+                  <span>Professional Dancer</span><br />Developed professional
+                  relationships with different dance professionals,
+                  choreographers, and performers by actively listening and
+                  effectively communicating.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="experience">
+              <ul>
+                <li>
+                  <span>May 2023</span><br />Write clean, efficient, and
+                  well-structured code using HTML, CSS, and JavaScript
+                </li>
+                <li>
+                  <span>May 2023</span><br />Document technical specifications,
+                  project details, and development processes
+                </li>
+                <li>
+                  <span>May 2023</span><br />Assist in website maintenance,
+                  updates, and enhancements
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="education">
+              <ul>
+                <li>
+                  <span>Certificat</span><br />Proficiency in HTML,
+                  CSS,Typescript React.js Data structure/algorhyms and
+                  JavaScript
+                </li>
+                <li>
+                  <span>Moscow University of Civil Engineering</span
+                  ><br />Collaborate with the development team to understand
+                  project requirements and design web solutions
+                </li>
+                <li>
+                  <span> Band leader</span><br />Excellent communication and
+                  teamwork abilities
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----Services---- -->
+    <div id="services">
+      <div class="container-services">
+        <h2 class="sub-title">My Services</h2>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h3>Front End Developer</h3>
+
+            <p>
+              Goal-driven Web Developer with a strong dedication to
+              collaborative work and a problem-solving mind. specialize in using
+              various web design tools to create tailored, client-focused
+              websites and designs. With over two years of experience,
+              prioritize delivering exceptional user experience, usability and
+              speed.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-regular fa-saxophone"></i>
+            <h3>Band leader/Saxophonist</h3>
+            <p>
+              Hardworking performance leader skilled at selecting and arranging
+              musical pieces for regular, holiday and special event
+              performances. Adept at working with individual performers to
+              optimize sound and abilities. Specializing in Jazz music. Directed
+              groups at rehearsals and live or recorded performances to achieve
+              desired effects such as tonal and harmonic balance dynamics,
+              rhythm, and tempo.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-thin fa-music-slash"></i>
+            <h3>Professional Dancer</h3>
+            <p>
+              Demonstrates strong analytical, communication, and teamwork
+              skills, with proven ability to quickly adapt to new environments.
+              Eager to contribute to team success and further develop
+              professional skills. Brings positive attitude and commitment to
+              continuous learning and growth. Taught dance classes to children
+              and adults of different skill levels.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------Portfolio------------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h2 class="sub-title">My Work</h2>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/developer.jpg" alt="" />
+            <div class="layer">
+              <h4>Front End Developer</h4>
+              <p>
+                Tap here and see all my projects .
+              </p>
+              <a href="#developer.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/phone2.JPG" alt="" />
+            <div class="layer">
+              <h4>Band Leader/Saxophonist</h4>
+              <p>
+                Click here and see all my activities as Saxophonist and as Band leader.
+              </p>
+              <a href="#leader.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/program-icon1.jpg" alt="" />
+            <div class="layer">
+              <h4>Professional Dancer</h4>
+              <p>Click here and see my work as Dancer</p>
+              <a href="#dancer.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- -----------contact------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact Me</h2>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >stevensonstlaurent08@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone-flip"></i>5613226913</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/steevenson.saintlaurent?mibextid=LQQJ4d"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/stevensonsaintlaurent?igsh=amJoaWZ1bnJkbm8x&utm_source=qr"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#"><i class="fa-regular fa-envelope"></i></a>
+              <a
+                href="https://www.linkedin.com/in/stevenson-st-laurent-665627282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              href="images/Stevenson St Laurent - Resume (5).pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder=" Your Name"
+                required
+              />
+              <input
+                type="text"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright <i class="fa-solid fa-heart"></i>made by Stevenson</p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
