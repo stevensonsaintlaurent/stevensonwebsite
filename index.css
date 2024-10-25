@@ -373,20 +373,18 @@ nav .fa-sharp {
   display: none;
 }
 
-
 @media only screen and (max-width: 1050px) {
-  .container .fa-bars{
-    display:flex;
+  .container .fa-bars {
+    display: none;
     justify-content: center;
     top: 0;
-    left: 0;  
+    left: 0;
   }
 }
 
 @media only screen and (max-width: 600px) {
-
-  .container .fa-bars{
-    display:flex;
+  .container .fa-bars {
+    display: none;
     justify-content: center;
     top: 0;
     left: 0;
@@ -404,66 +402,64 @@ nav .fa-sharp {
     transition: right 0.5s;
   }
 }
-  .header {
-    
-    /* background-image: url(images/stevephoto3.jpg); */
-  }
+.header {
+  /* background-image: url(images/stevephoto3.jpg); */
+}
 
-  .hero-header{
-    background-image: url(images/stevephoto3.jpg);
-  }
-  .header-text {
-    margin-top: 100%;
-    font-size: 16px;
-  }
+.hero-header {
+  background-image: url(images/stevephoto3.jpg);
+}
+.header-text {
+  margin-top: 100%;
+  font-size: 16px;
+}
 
-  .header-text h2 {
-    font-size: 30px;
-  }
-  nav .fa-sharp {
-    display: block;
-    font-size: 25px;
-  }
+.header-text h2 {
+  font-size: 30px;
+}
+nav .fa-sharp {
+  display: block;
+  font-size: 25px;
+}
 
-  .fa-bars {
-    display: block;
-    left: 25px;
-  }
- 
-  nav ul li {
-    display: block;
-    margin: 25px;
-  }
-  nav ul .fa-sharp {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-  }
-  .sub-title {
-    font-size: 40px;
-  }
-  .about-col-1,
-  .about-col-2 {
-    flex-basis: 100%;
-  }
-  .about-col-1 {
-    margin-bottom: 30px;
-  }
-  .about-col-2 {
-    font-size: 14px;
-  }
-  .tab-link {
-    font-size: 16px;
-    margin-right: 20px;
-  }
-  .conctact-left,
-  .contact-right {
-    flex-basis: 100%;
-  }
-  .copyright {
-    font-size: 14px;
-  }
+.fa-bars {
+  display: block;
+  left: 25px;
+}
+
+nav ul li {
+  display: block;
+  margin: 25px;
+}
+nav ul .fa-sharp {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+}
+.sub-title {
+  font-size: 40px;
+}
+.about-col-1,
+.about-col-2 {
+  flex-basis: 100%;
+}
+.about-col-1 {
+  margin-bottom: 30px;
+}
+.about-col-2 {
+  font-size: 14px;
+}
+.tab-link {
+  font-size: 16px;
+  margin-right: 20px;
+}
+.conctact-left,
+.contact-right {
+  flex-basis: 100%;
+}
+.copyright {
+  font-size: 14px;
 }
 
 #msg {
