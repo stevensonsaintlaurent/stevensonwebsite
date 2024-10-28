@@ -15,31 +15,48 @@ body {
 }
 
 .header {
-  background: #150515;
+  /* background: #150515; */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   padding: 20px;
   z-index: 999;
   top: 0;
   left: 0;
+  background-color: transparent;
   position: sticky;
 }
 
-.container {
+/* .container {
   padding: 10px 10px;
-}
+} */
 
 nav {
+  position: relative;
+  height: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-
-  z-index: 999;
+  position: relative;
 }
+
+nav ul {
+  display: flex;
+}
+
 .logo {
   width: 140px;
   font-size: 32px;
+  color: #fff;
 }
+
+.nav-toggle,
+.nav-close {
+  display: none;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 48px;
+  cursor: pointer;
+}
+
 
 nav ul li {
   display: inline-block;
@@ -366,45 +383,47 @@ form btn2 {
 
 /* --------------css for small screens------------- */
 
-nav .fa-sharp {
-  display: none;
-}
-.fa-bars {
-  display: none;
-}
-
-@media only screen and (max-width: 1050px) {
-  .container .fa-bars {
+@media screen and (max-width: 1050px) {
+  /* .container .fa-bars {
     display: none;
     justify-content: center;
     top: 0;
     left: 0;
-  }
-}
+  } */
 
-@media only screen and (max-width: 600px) {
-  .container .fa-bars {
-    display: none;
-    justify-content: center;
-    top: 0;
-    left: 0;
-  }
-
-  nav ul {
-    background-color: #150515;
+  .nav-menu {
     position: fixed;
     top: 0;
-    right: 100%;
+    right: -100%;
+    background-color: hsla(230px, 70%, 4%, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 80%;
+    height: 100%;
+    padding: 7rem 3rem;
+    transition: right 0.4s;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .container .fa-bars {
+    display: none;
+    justify-content: center;
+    top: 0;
+    left: 0;
+  }
+
+  .container .side-menu {
+    background-color: hsla(#150515, 70%, 4%, 0.2%);
+    position: fixed;
+    top: 0;
+    right: -100%;
     width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 999;
+    height: 100%;
+    padding: 50px 25px;
     transition: right 0.5s;
   }
-}
-.header {
-  /* background-image: url(images/stevephoto3.jpg); */
-}
+
 
 .hero-header {
   background-image: url(images/stevephoto3.jpg);
@@ -469,4 +488,5 @@ nav ul .fa-sharp {
 }
 .show-menu {
   right: 0;
+}
 }
