@@ -56,6 +56,10 @@ nav {
   cursor: pointer;
 }
 
+.fa-sharp {
+  color: #fff;
+}
+
 nav ul li {
   display: inline-block;
   list-style: none;
@@ -439,7 +443,7 @@ form btn2 {
 
   nav ul li {
     display: block;
-    margin: 25px;
+    margin: 50px 25px;
   }
   nav ul .nav-close {
     position: absolute;
@@ -477,8 +481,8 @@ form btn2 {
     margin-top: -40px;
     display: block;
   }
+}
 
-  .show-menu {
-    right: 0;
-  }
+.show-menu {
+  right: 0;
 }
