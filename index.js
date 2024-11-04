@@ -1,3 +1,17 @@
-const nav=document.getElementById('side-menu')
-const open=document.getElementById('open-bar')
-const close=document.getElementById('close-bar')
+const nav = document.getElementById("side-menu");
+const open = document.getElementById("open-bar");
+const close = document.getElementById("nav-close");
+
+if (open) {
+  open.addEventListener("click", () => {
+    nav.classList.add("show-menu");
+    console.log("stevenson");
+  });
+}
+
+if (close) {
+  close.addEventListener("click", () => {
+    nav.classList.remove("show-menu");
+    console.log("st alure");
+  });
+}
