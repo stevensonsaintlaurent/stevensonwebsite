@@ -1,9 +1,9 @@
 Project Setup
 
-Install Node.js and npm (latest version)
-Initialize new Vite + React project: npm create vite@latest my-app -- --template react
-Set up project structure (folders for components, assets, styles, etc.)
-Install additional dependencies (React Router, state management, etc. as needed)
+✅ Install Node.js and npm (latest version)
+✅Initialize new Vite + React project: npm create vite@latest my-app -- --template react
+✅Set up project structure (folders for components, assets, styles, etc.)
+✅Install additional dependencies (React Router-dom,reacr-icons state management, etc. as needed)
 
 Design Preservation
 
