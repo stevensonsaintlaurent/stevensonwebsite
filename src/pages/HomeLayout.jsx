@@ -9,8 +9,9 @@ const HomeLayout = () => {
     <>
       <Header />
       <Navbar />
-      <Outlet />
-      <Landing />
+      <section>
+        <Outlet />
+      </section>
     </>
   );
 };
