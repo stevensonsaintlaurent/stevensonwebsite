@@ -1,5 +1,4 @@
-import React from "react";
-import Hero from "../componets/Hero";
+import { Footer, Hero } from "../components";
 
 const Landing = () => {
   return (

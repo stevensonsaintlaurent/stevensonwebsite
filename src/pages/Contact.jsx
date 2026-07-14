@@ -65,11 +65,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="copyright">
-          <p>
-            copyright <i className="fa-solid fa-heart"></i>made by Stevenson
-          </p>
-        </div>
       </div>
     </>
   );
