@@ -5,13 +5,13 @@ Project Setup
 ✅Set up project structure (folders for components, assets, styles, etc.)
 ✅Install additional dependencies (React Router-dom,reacr-icons state management, etc. as needed)
 
-Design Preservation
+✅Design Preservation
 
-Review old website’s HTML/CSS for layout and style details
+✅Review old website’s HTML/CSS for layout and style details
 Copy or adapt existing CSS/SCSS to the new project
 Ensure fonts, colors, images, and spacing match the old design
 
-Static Content Migration
+✅Static Content Migration
 
 Break down old HTML into reusable React components
 Move static assets (images, icons) to the new project’s public or assets folder
