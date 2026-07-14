@@ -5,7 +5,14 @@ const HomeLayout = () => {
   return (
     <>
       <Header />
-      <section>
+      <section
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          margin: "20px 56px",
+        }}
+      >
         <Outlet />
       </section>
     </>

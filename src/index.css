@@ -17,13 +17,11 @@ body {
 /* ================ section header navbar menu ================== */
 
 .header {
-  /* background: #150515; */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   padding: 20px;
   z-index: 999;
   top: 0;
   left: 0;
-  background-color: transparent;
   background-color: #150515;
   position: sticky;
 }
@@ -63,7 +61,7 @@ nav {
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 10px;
 }
 
 nav ul li a {
@@ -71,6 +69,9 @@ nav ul li a {
   text-decoration: none;
   font-size: 20px;
   position: relative;
+  padding: 10px 15px;
+  text-transform: capitalize;
+  font-size: bold;
 }
 
 nav ul li a::after {
@@ -212,7 +213,9 @@ nav ul li a:hover::after {
   font-size: 13px;
   font-weight: 300;
   border-radius: 10px;
-  transition: background 0.5s, transform 0.5s;
+  transition:
+    background 0.5s,
+    transform 0.5s;
 }
 .services-list div i {
   font-size: 50px;
@@ -385,13 +388,7 @@ form btn2 {
 
 /* --------------css for small screens------------- */
 
-@media screen and (max-width: 1050px) {
-  /* .container .fa-bars {
-    display: none;
-    justify-content: center;
-    top: 0;
-    left: 0;
-  } */
+/* @media screen and (max-width: 1050px) {
   .nav-close,
   .nav-toggle {
     display: block;
@@ -485,4 +482,4 @@ form btn2 {
 
 .show-menu {
   right: 0;
-}
+} */

@@ -2,7 +2,11 @@ import React from "react";
 import Hero from "../componets/Hero";
 
 const Landing = () => {
-  return <div>landing page </div>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 };
 
 export default Landing;

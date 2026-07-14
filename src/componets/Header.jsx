@@ -5,11 +5,10 @@ const Header = () => {
   return (
     <>
       <section id="header" className="header">
-        <div className="container">
+        <div>
           <Navbar />
         </div>
       </section>
-      <Hero />
     </>
   );
 };
