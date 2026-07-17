@@ -8,6 +8,7 @@ import {
   Portfolio,
   Services,
 } from "./pages";
+import { Education, Experiences, Skills } from "./components";
 
 const router = createBrowserRouter([
   {
@@ -16,10 +17,25 @@ const router = createBrowserRouter([
     errorElement: <ErrorElement />,
     children: [
       { index: true, element: <Landing /> },
-      { path: "about", element: <About /> },
+      {
+        path: "about",
+        element: <About />,
+      },
       { path: "services", element: <Services /> },
       { path: "portfolio", element: <Portfolio /> },
       { path: "contact", element: <Contact /> },
+      {
+        path: "skills",
+        element: <Skills />,
+      },
+      {
+        path: "experience",
+        element: <Experiences />,
+      },
+      {
+        path: "education",
+        element: <Education />,
+      },
     ],
   },
 ]);

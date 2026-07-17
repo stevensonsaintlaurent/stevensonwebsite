@@ -3,7 +3,7 @@ import React from "react";
 const Portfolio = () => {
   return (
     <>
-      <section id="portfolio">
+      <section id="portfolio" style={{ margin: "0 20px" }}>
         <div className="container">
           <h2 className="sub-title">My Work</h2>
           <div className="work-list">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -25,15 +26,15 @@ const About = () => {
                 multiple users.
               </p>
               <div className="tab-titles">
-                <p className="tab-link active-link" onclick="opentab('skills')">
+                <Link to="/skills" className="tab-link active-link">
                   Skills
-                </p>
-                <p className="tab-link" onclick="opentab('experience')">
+                </Link>
+                <Link to="/experience" className="tab-link">
                   Experience
-                </p>
-                <p className="tab-link" onclick="opentab('education')">
+                </Link>
+                <Link to="/education" className="tab-link">
                   Education
-                </p>
+                </Link>
               </div>
               <div className="tab-content active-tab" id="skills">
                 <ul>

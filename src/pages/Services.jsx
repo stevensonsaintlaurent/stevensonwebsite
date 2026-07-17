@@ -1,60 +1,79 @@
-import React from "react";
+function Services() {
+  const services = [
+    {
+      icon: "💻",
+      title: "Front-End Development",
+      description:
+        "I design and develop modern, responsive websites and web applications using React, JavaScript, HTML, CSS, and Vite. My goal is to create fast, user-friendly, and visually appealing digital experiences.",
+      features: [
+        "Responsive Websites",
+        "React Applications",
+        "UI/UX Development",
+        "Landing Pages",
+        "Portfolio Websites",
+      ],
+    },
+    {
+      icon: "💃",
+      title: "Professional Dance Instruction",
+      description:
+        "As a professional dancer and instructor at Freedom Dance Studio, I teach students of all levels while helping them build confidence, technique, musicality, and social dancing skills.",
+      features: [
+        "Bachata Sensual",
+        "Urban Kiz",
+        "Konpa",
+        "Private Lessons",
+        "Group Classes",
+      ],
+    },
+    {
+      icon: "🎺",
+      title: "Band Leadership",
+      description:
+        "I lead the Freedom Dance Studio Big Band, organizing rehearsals, coordinating performances, and creating unforgettable live music experiences for dancers and audiences.",
+      features: [
+        "Live Performances",
+        "Band Coordination",
+        "Event Entertainment",
+        "Music Direction",
+        "Stage Leadership",
+      ],
+    },
+  ];
 
-const Services = () => {
   return (
-    <>
-      <div id="services">
-        <div className="container-services">
-          <h2 className="sub-title">My Services</h2>
-          <div className="services-list">
-            <div>
-              <i className="fa-solid fa-code"></i>
-              <h3>Front End Developer</h3>
+    <section className="services" id="services">
+      <div className="services-container">
+        <div className="section-title">
+          <h2>My Services</h2>
+          <p>
+            I combine creativity, technology, music, and dance to deliver
+            engaging experiences both on stage and on the web.
+          </p>
+        </div>
 
-              <p>
-                Goal-driven Web Developer with a strong dedication to
-                collaborative work and a problem-solving mind. specialize in
-                using various web design tools to create tailored,
-                client-focused websites and designs. With over two years of
-                experience, prioritize delivering exceptional user experience,
-                usability and speed.
-              </p>
-              <a href="#">Learn more</a>
-            </div>
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div className="service-card" key={index}>
+              <div className="service-icon">{service.icon}</div>
 
-            <div>
-              <i className="fa-regular fa-saxophone"></i>
-              <h3>Band Leader/Saxophonist</h3>
-              <p>
-                Hardworking performance leader skilled at selecting and
-                arranging musical pieces for regular, holiday and special event
-                performances. Adept at working with individual performers to
-                optimize sound and abilities. Specializing in Jazz music.
-                Directed groups at rehearsals and live or recorded performances
-                to achieve desired effects such as tonal and harmonic balance
-                dynamics, rhythm, and tempo.
-              </p>
-              <a href="#">Learn more</a>
-            </div>
+              <h3>{service.title}</h3>
 
-            <div>
-              <i className="fa-thin fa-music-slash"></i>
-              <h3>Professional Dancer</h3>
-              <p>
-                Demonstrates strong analytical, communication, and teamwork
-                skills, with proven ability to quickly adapt to new
-                environments. Eager to contribute to team success and further
-                develop professional skills. Brings positive attitude and
-                commitment to continuous learning and growth. Taught dance
-                classes to children and adults of different skill levels.
-              </p>
-              <a href="#">Learn more</a>
+              <p>{service.description}</p>
+
+              <ul>
+                {service.features.map((feature, i) => (
+                  <li key={i}>✓ {feature}</li>
+                ))}
+              </ul>
+
+              <button>Learn More</button>
             </div>
-          </div>
+          ))}
         </div>
       </div>
-    </>
+    </section>
   );
-};
+}
 
 export default Services;
