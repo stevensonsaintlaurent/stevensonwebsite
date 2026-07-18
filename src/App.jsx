@@ -8,7 +8,14 @@ import {
   Portfolio,
   Services,
 } from "./pages";
-import { Education, Experiences, Skills } from "./components";
+import {
+  BandLeader,
+  DancePerformances,
+  Education,
+  Experiences,
+  Projects,
+  Skills,
+} from "./components";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +42,21 @@ const router = createBrowserRouter([
       {
         path: "education",
         element: <Education />,
+      },
+
+      {
+        path: "bandleader",
+        element: <BandLeader />,
+      },
+
+      {
+        path: "dance",
+        element: <DancePerformances />,
+      },
+
+      {
+        path: "projects",
+        element: <Projects />,
       },
     ],
   },

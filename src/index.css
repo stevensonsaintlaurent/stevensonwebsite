@@ -915,3 +915,373 @@ form btn2 {
     font-size: 3rem;
   }
 }
+
+/* =================== Projects ==================== */
+.projects {
+  width: 100%;
+  padding: 80px 8%;
+  background: #f5f5f5;
+}
+
+.projects-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.projects-title h2 {
+  font-size: 40px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.projects-title p {
+  color: #666;
+  font-size: 18px;
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 25px;
+}
+
+.project-content h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #222;
+}
+
+.project-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.project-content span {
+  display: inline-block;
+  background: #0066ff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.project-content a {
+  display: inline-block;
+  text-decoration: none;
+  background: #111;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.project-content a:hover {
+  background: #0066ff;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 60px 20px;
+  }
+
+  .projects-title h2 {
+    font-size: 32px;
+  }
+
+  .projects-title p {
+    font-size: 16px;
+  }
+
+  .project-card img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-title h2 {
+    font-size: 28px;
+  }
+
+  .project-content {
+    padding: 20px;
+  }
+
+  .project-content h3 {
+    font-size: 22px;
+  }
+
+  .project-content a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ==================== Dance Performance ======================= */
+.performance {
+  width: 100%;
+  padding: 80px 8%;
+  background: #101010;
+}
+
+.performance-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.performance-header h2 {
+  color: white;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.performance-header p {
+  color: #cccccc;
+  font-size: 18px;
+  max-width: 850px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.performance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+}
+
+.performance-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.performance-card:hover {
+  transform: translateY(-10px);
+}
+
+.performance-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.performance-content {
+  padding: 25px;
+}
+
+.performance-content h3 {
+  color: #111;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.performance-content h4 {
+  color: #d62828;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.performance-content p {
+  color: #555;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .performance {
+    padding: 60px 20px;
+  }
+
+  .performance-header h2 {
+    font-size: 34px;
+  }
+
+  .performance-header p {
+    font-size: 16px;
+  }
+
+  .performance-card img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .performance-header h2 {
+    font-size: 28px;
+  }
+
+  .performance-content {
+    padding: 20px;
+  }
+
+  .performance-content h3 {
+    font-size: 22px;
+  }
+
+  .performance-content h4 {
+    font-size: 15px;
+  }
+}
+
+/* ================== Band Leader =================== */
+.band {
+  padding: 80px 8%;
+  background: linear-gradient(135deg, #111, #1b1b1b);
+}
+
+.band-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.band-header h2 {
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.band-header p {
+  color: #d6d6d6;
+  max-width: 850px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.band-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  margin-bottom: 60px;
+}
+
+.band-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.band-card:hover {
+  transform: translateY(-10px);
+}
+
+.band-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.band-content {
+  padding: 25px;
+}
+
+.band-content h3 {
+  margin-bottom: 15px;
+  color: #111;
+  font-size: 24px;
+}
+
+.band-content p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.band-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.stat {
+  background: #222;
+  text-align: center;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.stat:hover {
+  background: #d4af37;
+}
+
+.stat h3 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  color: #ddd;
+}
+
+.stat:hover h3,
+.stat:hover p {
+  color: #111;
+}
+
+@media (max-width: 768px) {
+  .band {
+    padding: 60px 20px;
+  }
+
+  .band-header h2 {
+    font-size: 34px;
+  }
+
+  .band-header p {
+    font-size: 16px;
+  }
+
+  .band-card img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .band-header h2 {
+    font-size: 28px;
+  }
+
+  .band-content h3 {
+    font-size: 22px;
+  }
+
+  .band-content {
+    padding: 20px;
+  }
+
+  .stat h3 {
+    font-size: 26px;
+  }
+}

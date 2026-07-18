@@ -6,3 +6,6 @@ export { default as Hero } from "./Hero";
 export { default as Navbar } from "./Navbar";
 export { default as NavbarLinks } from "./NavbarLinks";
 export { default as Footer } from "./Footer";
+export { default as BandLeader } from "./BandLeader";
+export { default as DancePerformances } from "./DancePerformances";
+export { default as Projects } from "./Projects";

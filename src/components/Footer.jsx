@@ -1,7 +1,58 @@
 import { Link } from "react-router-dom";
+import NavbarLinks from "./NavbarLinks";
+
+const linksFooter = [
+  {
+    id: 1,
+    url: "/",
+    text: "home",
+  },
+
+  {
+    id: 2,
+    url: "/about",
+    text: "about",
+  },
+
+  {
+    id: 3,
+    url: "/skills",
+    text: "sKills",
+  },
+
+  {
+    id: 4,
+    url: "/experience",
+    text: "experience",
+  },
+
+  {
+    id: 5,
+    url: "/education",
+    text: "education",
+  },
+
+  {
+    id: 6,
+    url: "/projects",
+    text: "project",
+  },
+
+  {
+    id: 7,
+    url: "/contact",
+    text: "contact",
+  },
+];
 
 function Footer() {
   const year = new Date().getFullYear();
+  const scroolUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <footer className="footer">
@@ -15,16 +66,32 @@ function Footer() {
           </p>
         </div>
 
-        <div className="footer-links">
+        <div className="footer-links ">
           <h3>Quick Links</h3>
 
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          {linksFooter.map((link) => {
+            const { id, url, text } = link;
+
+            return (
+              <Link
+                to={url}
+                onClick={scroolUp}
+                key={id}
+                style={{
+                  textTransform: "capitalize",
+                }}
+              >
+                {text}
+              </Link>
+            );
+          })}
+
+          {/* <Link to="/about">About</Link>
           <Link to="/skills">Skills</Link>
           <Link to="/experience">Experience</Link>
           <Link to="/education">Education</Link>
           <Link to="/projects">Projects</Link>
-          <Link to="contact">Contact</Link>
+          <Link to="contact">Contact</Link> */}
         </div>
 
         <div className="footer-contact">
